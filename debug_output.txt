@@ -1,0 +1,6 @@
+Testing Name Resolution for 'Portal 2'
+Portal 2 App ID: None
+Testing reviews fetch for 620
+Reviews length: 342
+Testing summarizer
+Good Stuff + J.K Simmons goated Great gameplay! Good Stuff + J.K Simmons goated Great gameplay!

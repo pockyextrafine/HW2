@@ -1,0 +1,12 @@
+﻿{
+  "repositoryName": "pockyextrafine/HW2",
+  "pipelineDirectory": "HW2",
+  "workspaceDirectory": "HW2\\HW2",
+  "repositories": {
+    "pockyextrafine/HW2": {
+      "repositoryPath": "HW2\\HW2",
+      "lastRunOn": "04/07/2026 00:22:32 +09:00"
+    }
+  },
+  "lastRunOn": "04/07/2026 00:22:32 +09:00"
+}

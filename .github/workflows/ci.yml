@@ -49,11 +49,11 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Pull latest image
-        shell: pwsh
+        shell: powershell
         run: docker pull pockyextrafine/steam-summarizer:latest
 
       - name: Stop and Remove Existing Container
-        shell: pwsh
+        shell: powershell
         run: |
           $containerName = "steam-summarizer"
           $exists = docker ps -aq --filter "name=$containerName"

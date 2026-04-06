@@ -63,6 +63,6 @@ jobs:
           }
 
       - name: Run New Container
-        shell: pwsh
+        shell: powershell
         run: |
           docker run -d --name steam-summarizer -p 8000:8000 pockyextrafine/steam-summarizer:latest

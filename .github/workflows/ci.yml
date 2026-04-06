@@ -34,7 +34,7 @@ jobs:
           push: true
           # Replace 'YOUR_DOCKER_HUB_ID' with your real ID or adjust the secret
           tags: |
-            ${{ secrets.DOCKER_HUB_USERNAME }}/steam-summarizer:latest
-            ${{ secrets.DOCKER_HUB_USERNAME }}/steam-summarizer:${{ github.sha }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/steam-summarizer:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/steam-summarizer:${{ github.sha }}
           cache-from: type=gha
           cache-to: type=gha,mode=max

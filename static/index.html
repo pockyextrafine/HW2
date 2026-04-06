@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <!-- Abstract background elements -->
     <div class="bg-blobs">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
@@ -21,7 +20,7 @@
     <main class="container">
         <header class="hero">
             <h1 class="title">Steam Review <span class="gradient-text">AI Summarizer</span></h1>
-            <p class="subtitle">Instantly understand what players think. Enter a game name or App ID to extract and summarize user opinions in seconds.</p>
+            <p class="subtitle">Instantly understand what players think. Enter a game name or App ID to extract and summarize positive and negative opinions.</p>
         </header>
 
         <section class="search-section glass-panel">
@@ -37,16 +36,35 @@
             <div id="error-message" class="error-msg hidden"></div>
         </section>
 
-        <!-- Use an ID for targeting -->
         <section id="results" class="results-section hidden">
             <div class="glass-panel result-card">
                 <div class="result-header">
-                    <h2>AI Summary</h2>
-                    <span id="review-count" class="badge">Analyzed 10 reviews</span>
+                    <h2>AI Sentiment Analysis</h2>
+                    <span id="review-count" class="badge">Analyzed 50 reviews</span>
                 </div>
-                <div class="result-body">
-                    <p id="summary-text" class="summary-text"></p>
+                
+                <div class="sentiment-bar-container">
+                    <div class="sentiment-labels">
+                        <span id="pos-label" class="pos-text">Positive 0%</span>
+                        <span id="neg-label" class="neg-text">Negative 0%</span>
+                    </div>
+                    <div class="sentiment-bar">
+                        <div id="pos-bar-fill" class="pos-fill" style="width: 50%;"></div>
+                        <div id="neg-bar-fill" class="neg-fill" style="width: 50%;"></div>
+                    </div>
                 </div>
+
+                <div class="summary-columns">
+                    <div class="summary-col positive-col">
+                        <h3><i class="icon-pos">+</i> What Players Love</h3>
+                        <p id="pos-summary-text" class="summary-text text-skeleton">Generating summary...</p>
+                    </div>
+                    <div class="summary-col negative-col">
+                        <h3><i class="icon-neg">-</i> What Needs Work</h3>
+                        <p id="neg-summary-text" class="summary-text text-skeleton">Generating summary...</p>
+                    </div>
+                </div>
+
                 <div class="result-footer">
                     <a id="steam-link" href="#" target="_blank" class="steam-link">View on Steam Store</a>
                 </div>

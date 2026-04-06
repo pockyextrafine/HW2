@@ -21,6 +21,10 @@ def summarize_text(text: str) -> str:
     if not text.strip():
         return "No text provided to summarize."
         
+    # If the text is very short, just return it instead of spinning up the AI
+    if len(text.strip()) < 50:
+        return text.strip()
+        
     tokenizer, model = get_summarizer()
     
     # Truncate text string before tokenization to save time. 

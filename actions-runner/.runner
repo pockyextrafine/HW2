@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 2,
+  "agentName": "DESKTOP-2GQNM1A",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus11.actions.githubusercontent.com/gKWO5JZKxLj9FT68W9CqwKfNR6vcmbidj8tq0IJOu5XpBUFWwP/",
+  "gitHubUrl": "https://github.com/pockyextrafine/HW2",
+  "workFolder": "_work",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
